@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- Explore Elinor about page: the development warning, the ReCite project, and where the data comes from. Mostly static; assets/app.js fills in the snapshot facts (renderAbout). -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Content-Security-Policy: scripts, styles and data only from this site; no inline scripts or style attributes. Keep in sync on all five pages. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; form-action 'self'; base-uri 'none'">
+  <title>About · Explore Elinor</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="about">
+  <main>
+    <h1>About Explore Elinor</h1>
+    <p class="quiet">A study in reusable citations for the knowledge commons</p>
+
+    <div class="notice" role="note">
+      <p><strong>This website is under active development.</strong></p>
+      <p>Information here is not complete, and some of it is not correct. Please don't treat it as final.</p>
+      <p id="snapshot-facts">Counts come from a dated snapshot of the Zotero library.</p>
+    </div>
+
+    <h2>Part of the ReCite project</h2>
+    <p>Explore Elinor is part of the ReCite project. Read more about ReCite on Meta-Wiki:
+      <a href="https://meta.wikimedia.org/wiki/WikiCite/ReCite" target="_blank" rel="noopener">ReCite on Meta-Wiki ↗</a></p>
+
+    <h2>The data</h2>
+    <p>Every record lives in the public Zotero group Wiki ReCite, in the collection "Elinor - under construction":
+      <a href="https://www.zotero.org/groups/6513130/wiki_recite" target="_blank" rel="noopener">Wiki ReCite on Zotero ↗</a></p>
+    <p id="ways-in">The site starts from English Wikipedia articles, plus works found on archive.org that no article cites yet.</p>
+
+    <h2>What "Archive copy" means</h2>
+    <p>A Wayback Machine snapshot or an archive.org item is attached to the Zotero record. Whether each original link
+      still works has not been checked yet.</p>
+    <p>"No copy found" means an archive pass looked and found none. "Not checked yet" means no one has looked: so far
+      only the Elinor Ostrom citations have been through an archive pass.</p>
+    <p>Records flagged "Unprocessed" haven't been cleaned up yet: their type or details may be wrong.</p>
+  </main>
+</body>
+</html>

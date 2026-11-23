@@ -1,0 +1,8 @@
+# API keys live here (read-only Zotero key, OpenAlex key). Never commit them.
+secrets/
+# Scratch files: downloads, test output, throwaway scripts.
+.scratch/
+.DS_Store
+__pycache__/
+# Local log of Claude's commands; not part of the project.
+claude-activity.log
